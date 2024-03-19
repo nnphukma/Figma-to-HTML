@@ -397,8 +397,14 @@ a {
   padding: 96 0;
   background: #2e2100;
 }
-.feedback .feedback-item {
+.feedback-list{
   display: flex;
+  overflow: hidden;
+}
+.feedback .feedback-item {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
 }
 .feedback .info .avatar {
   width: 72px;
@@ -446,4 +452,52 @@ a {
   font-size: 2.6rem;
   font-style: italic;
   line-height: 1.54; /* 153.846% */
+}
+
+
+/* ==========================features====================== */
+
+.features{
+  margin-top: 135px;
+  padding: 65 0;
+  background: #FFF;
+}
+.features .body{
+  display: flex;
+  justify-content: space-between;
+}
+.features .images{
+  display: flex;
+  gap: 30px;
+}
+
+.features .images img{
+  width: 270px;
+  height: 404px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.features .lower{
+  margin-top: 34px;
+}
+
+.features .content{
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features .desc {
+  margin-top: 16px;
+  color: #5F5B53;
+font-size: 1.6rem;
+line-height: 1.75; /* 175% */
+}
+.features .cta-btn{
+  width: 137px;
+  height: 50px;
+  background: var(--primary-color);
+  margin-top: 32px;
 }
